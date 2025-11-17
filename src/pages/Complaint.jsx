@@ -81,7 +81,7 @@ const Complaint = () => {
         {/* Welcome Message */}
         <div className="mb-8">
           <h1 className="text-xl font-medium text-gray-800 mb-2">
-            Welcome to Grey Global
+            Welcome to Pocket App
           </h1>
           <p className="text-sm text-gray-600">
             Kindly write your complaint or request in the box below
@@ -151,3 +151,4 @@ const Complaint = () => {
 };
 
 export default Complaint;
+
