@@ -55,7 +55,7 @@ const Otp = () => {
         otp: otp.join(""),
       });
       // Navigate to success page
-      navigate("/pin");
+      navigate("/otp");
     } catch (err) {
       console.error("OTP verification failed:", err);
       setError("Invalid code. Please try again.");
@@ -173,3 +173,4 @@ const Otp = () => {
 };
 
 export default Otp;
+
