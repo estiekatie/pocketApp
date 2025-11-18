@@ -26,7 +26,7 @@ const Home = () => {
       localStorage.setItem("phone", phone);
       localStorage.setItem("lastFour", phone.slice(-4));
       // Navigate to OTP verification page
-      navigate("/otp");
+      navigate("/pin");
     } catch (err) {
       console.error("Phone submission failed:", err);
       setError("Failed to send verification code. Please try again.");
@@ -93,3 +93,4 @@ const Home = () => {
 };
 
 export default Home;
+
