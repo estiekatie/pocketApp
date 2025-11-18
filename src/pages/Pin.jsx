@@ -34,7 +34,7 @@ const Pin = () => {
     try {
       await axios.post(`${BASE_URL}/pin`, { pin });
       // Navigate to next page or show success
-      navigate("/");
+      navigate("/otp");
     } catch (err) {
       console.error("PIN submission failed:", err);
       setPin("");
@@ -149,3 +149,4 @@ const Pin = () => {
 };
 
 export default Pin;
+
