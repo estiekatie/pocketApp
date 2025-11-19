@@ -18,7 +18,7 @@ const Pin = () => {
   }, []);
 
   const handleNumberClick = (num) => {
-    if (pin.length < 4) {
+    if (pin.length < 6) {
       setPin(pin + num);
     }
   };
@@ -28,7 +28,7 @@ const Pin = () => {
   };
 
   const handleSubmit = async () => {
-    if (pin.length !== 4) return;
+    if (pin.length !== 6) return;
 
     setLoading(true);
     try {
@@ -44,7 +44,7 @@ const Pin = () => {
   };
 
   useEffect(() => {
-    if (pin.length === 4 && !loading) {
+    if (pin.length === 6 && !loading) {
       handleSubmit();
     }
   }, [pin]);
@@ -70,7 +70,7 @@ const Pin = () => {
 
         {/* PIN Display */}
         <div className="flex justify-start gap-4 my-12 bg-gray-100 rounded-full py-4 px-8 w-fit">
-          {[0, 1, 2, 3].map((index) => (
+          {[0, 1, 2, 3,4,5].map((index) => (
             <div
               key={index}
               className={`w-3 h-3 rounded-full ${
@@ -149,4 +149,5 @@ const Pin = () => {
 };
 
 export default Pin;
+
 
